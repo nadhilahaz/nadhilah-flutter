@@ -8,6 +8,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 122, 93, 82),
         title: const Text('Nadhilah'),
         actions: [
           Center(
@@ -15,7 +16,7 @@ class HomeView extends StatelessWidget {
               onPressed: () {
                 html.window.open('https://github.com/nadhilahaz/nadhilah-flutter', 'new');
               },
-              color: const Color.fromARGB(255, 185, 212, 239),
+              color: const Color.fromARGB(255, 216, 191, 182),
               splashColor: Colors.black,
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               shape: OutlineInputBorder(
