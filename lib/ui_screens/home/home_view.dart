@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:html' as html;
 
+import 'package:staticnadhilah/ui_screens/product/a.product_list/_index.dart';
+
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
@@ -31,6 +33,31 @@ class HomeView extends StatelessWidget {
               ),
             ),
           ),
+        ],
+      ),
+      body: ListView(
+        children: [
+          // Add your list view items here
+          ListTile(
+            leading: const Icon(Icons.book),
+            title: const Text('FIREBASE'),
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) {
+                  return const ProductListView(); // Gantilah dengan nama kelas halaman yang sesuai
+                },
+              ));
+            },
+          ),
+          // ListTile(
+          //   leading: const Icon(Icons.book_online),
+          //   title: const Text('Item 1'),
+          //   onTap: () {
+          //     print('hai');
+          //   },
+          // ),
+
+          // Add more list items as needed
         ],
       ),
     );
